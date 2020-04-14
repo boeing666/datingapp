@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Dating.App.Backend.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Dating.App.Backend.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dating.App.Backend.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dating.App.Backend.Models/1.0.0": {
+      "type": "project",
+      "path": "../Dating.App.Backend.Models/Dating.App.Backend.Models.csproj",
+      "msbuildProject": "../Dating.App.Backend.Models/Dating.App.Backend.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Dating.App.Backend.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\archi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Interfaces\\Dating.App.Backend.Interfaces.csproj",
+      "projectName": "Dating.App.Backend.Interfaces",
+      "projectPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Interfaces\\Dating.App.Backend.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\archi\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Interfaces\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\archi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj": {
+              "projectPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

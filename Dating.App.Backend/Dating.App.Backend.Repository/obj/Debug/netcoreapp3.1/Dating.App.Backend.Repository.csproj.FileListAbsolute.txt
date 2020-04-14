@@ -1,0 +1,14 @@
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Repository.deps.json
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Repository.dll
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.csprojAssemblyReference.cache
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.AssemblyInfoInputs.cache
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.AssemblyInfo.cs
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Repository.pdb
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Interfaces.dll
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Models.dll
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Interfaces.pdb
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\bin\Debug\netcoreapp3.1\Dating.App.Backend.Models.pdb
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.csproj.CoreCompileInputs.cache
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.csproj.CopyComplete
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.dll
+D:\projects\Dating.App\Dating.App.Backend\Dating.App.Backend.Repository\obj\Debug\netcoreapp3.1\Dating.App.Backend.Repository.pdb

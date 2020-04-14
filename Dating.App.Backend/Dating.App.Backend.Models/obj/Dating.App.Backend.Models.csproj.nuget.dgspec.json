@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj": {}
+    "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj": {}
   },
   "projects": {
-    "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj": {
+    "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj",
+        "projectUniqueName": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj",
         "projectName": "Dating.App.Backend.Models",
-        "projectPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj",
+        "projectPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\Dating.App.Backend.Models.csproj",
         "packagesPath": "C:\\Users\\archi\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend\\Dating.App.Backend.Models\\obj\\",
+        "outputPath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
