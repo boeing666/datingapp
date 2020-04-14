@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Dating.App.Backend.Models/1.0.0": {
+        "runtime": {
+          "Dating.App.Backend.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dating.App.Backend.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
