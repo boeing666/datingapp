@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Dating.App.Backend.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +16,7 @@ namespace Dating.App.Backend.Controllers
         {
             _context = context;
         }
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
