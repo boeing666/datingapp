@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p1+qwfC9FKP8YP771tdh3dAwvA7zLwUsZETUyvXBRhp15ks0K0dt65bgn3TWtn0RM6Fjr+V8pS7qc8ZMvBsl3Q==",
+  "dgSpecHash": "dTkx4uOTSthXVjcG9g/TV5IGoSMpWWFIDESWgDGxq89yCAtH+GN/2I/IsK9xVtFh0ABYBbq+90PpwsUBVCoBfQ==",
   "success": true,
   "projectFilePath": "D:\\projects\\Dating.App\\Dating.App.Backend\\Dating.App.Backend.Repository\\Dating.App.Backend.Repository.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\archi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\archi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"

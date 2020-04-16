@@ -1,6 +1,7 @@
-using System.Net;
+﻿using System.Net;
 using System.Text;
-using Dating.App.Backend.Data;
+using AutoMapper;
+using Dating.App.Backend.Controllers;
 using Dating.App.Backend.Helpers;
 using Dating.App.Backend.Interfaces.Repository;
 using Dating.App.Backend.Repository;
@@ -15,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 
 namespace Dating.App.Backend
 {
@@ -31,10 +33,21 @@ namespace Dating.App.Backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(
-                Configuration.GetConnectionString("DbConnection")));
-            services.AddMvc(options=>options.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Latest);
+                Configuration.GetConnectionString("DbConnection"),
+                b => b.MigrationsAssembly("Dating.App.Backend"))); //this line is added due to DataContext is in different Project
+
+            services.AddControllers().AddNewtonsoftJson(opts =>
+            {
+                opts.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            });
+
+            services.AddAutoMapper(typeof(AuthController).Assembly); //აქ იგივე რამე კლასი უნდა ეწეროს სადაც ვინახავთ AutoMapperProfiles
+
             services.AddCors();
+
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IDatingRepository, DatingRepository>();
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -76,17 +89,16 @@ namespace Dating.App.Backend
 
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
-            app.UseMvc();
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
-            //app.UseRouting();
+            app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllers();
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

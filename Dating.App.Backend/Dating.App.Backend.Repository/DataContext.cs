@@ -1,11 +1,7 @@
 ﻿using Dating.App.Backend.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Dating.App.Backend.Data
+namespace Dating.App.Backend.Repository
 {
     public class DataContext : DbContext
     {
@@ -13,5 +9,6 @@ namespace Dating.App.Backend.Data
 
         public DbSet<Value> Values { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Photo> Photos { get; set; }
     }
 }

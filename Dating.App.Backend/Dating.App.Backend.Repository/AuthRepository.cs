@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
-using Dating.App.Backend.Data;
 using Dating.App.Backend.Interfaces.Repository;
 using Dating.App.Backend.Models;
+using Dating.App.Backend.Models.ResponseModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dating.App.Backend.Repository

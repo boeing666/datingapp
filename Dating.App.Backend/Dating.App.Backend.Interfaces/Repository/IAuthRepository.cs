@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Dating.App.Backend.Models;
+using Dating.App.Backend.Models.ResponseModels;
 
 namespace Dating.App.Backend.Interfaces.Repository
 {

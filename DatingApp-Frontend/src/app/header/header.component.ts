@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../../services/auth.service';
 import {AlertifyService} from '../../services/alertify.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ export class HeaderComponent implements OnInit {
   model: any = {};
 
   constructor(public authService: AuthService,
-              private alertify: AlertifyService) {
+              private alertify: AlertifyService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -22,8 +24,9 @@ export class HeaderComponent implements OnInit {
         this.alertify.success('logged in successfully');
       }, error => {
        this.alertify.error(error);
-      }
-    );
+      }, () =>{
+      this.router.navigate(['/members']);
+    });
   }
 
   loggedIn() {
@@ -33,5 +36,6 @@ export class HeaderComponent implements OnInit {
   logout() {
     localStorage.removeItem('token');
     this.alertify.message('logout');
+    this.router.navigate(['/home']);
   }
 }
