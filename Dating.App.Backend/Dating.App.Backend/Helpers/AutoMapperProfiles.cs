@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Dating.App.Backend.Models;
+using Dating.App.Backend.Models.DTO;
 using Dating.App.Backend.Models.RequestModels;
 using Dating.App.Backend.Models.ResponseModels;
 
@@ -27,6 +28,7 @@ namespace Dating.App.Backend.Helpers
                     src.DateOfBirth.CalculateAge()));
             ;
             CreateMap<Photo, PhotosForUserDetailModel>();
+            CreateMap<UserEditModel, User>();
         }
     }
 }

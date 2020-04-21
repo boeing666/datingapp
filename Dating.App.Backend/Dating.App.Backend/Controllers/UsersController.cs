@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using Dating.App.Backend.Interfaces.Repository;
+using Dating.App.Backend.Models.DTO;
 using Dating.App.Backend.Models.ResponseModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +40,24 @@ namespace Dating.App.Backend.Controllers
             var userToReturn = _mapper.Map<UserDetailModel>(user);
 
             return Ok(userToReturn);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(int id, UserEditModel model)
+        {
+            if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+                return Unauthorized();
+
+            var userFromRepo = await _repo.GetUser(id);
+
+            _mapper.Map(model, userFromRepo);
+
+            if (await _repo.SaveAll())
+            {
+                return NoContent();
+            }
+
+            throw new Exception($"Updation user {id} failed on save");
         }
 
 
